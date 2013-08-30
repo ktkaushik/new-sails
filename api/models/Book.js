@@ -16,7 +16,7 @@ module.exports = {
     _creator: {
       // type: 'Schema.ObjectId'
        //author: [{ type: 'Schema.Types.ObjectId', ref: 'Author' } ]
-      associate: { ref: 'Author' }
+      associate: { ref: 'Author', name: '_creator' }
     }
   }
 };

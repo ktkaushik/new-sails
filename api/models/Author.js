@@ -11,6 +11,9 @@ module.exports = {
   adapter: 'mongoose',
   attributes: {
     name: 'string',
-    books: [{type: 'Schema.Types.ObjectId', ref: 'Book'}]
+    // books: [{type: 'Schema.Types.ObjectId', ref: 'Book'}]
+    books: {
+      associate: { ref: 'Book', name: 'books' }
+    }
   }
 };
